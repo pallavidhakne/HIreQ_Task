@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+*
+{
+    font-family: 'PT-Sans',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    background-color: #06d6a0;
+    font-family: 'PT-Sans',sans-serif;
+   
+}
+
+.table {
+    width: 80vw;
+    margin:auto;
+    height: 80vh;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+
+
+
+.table tr {
+    border-bottom: 1px solid black;
+    text-align: left;
+    height: 10%;
+}
+
+.table th{
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 4px 0 4px 0;
+    background-color: #2b2d42;
+    color:white;
+
+    /* background-color: #06d6a0; */
+}
+.table tbody tr:hover {
+    /* background-color: #06d6a0;  */
+    cursor:pointer;
+  }
+.table tbody {
+    font-weight: 100;
+}
+
+.table td {
+    padding: 2px 0 4px 0;
+}
+
+@media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        position: relative;
+    }
+
+}
+  
